@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1a365d">
     <meta name="color-scheme" content="light">
     <meta name="description" content="Macon Mobile Commercial Locksmith - 20+ years experience. Commercial storefront doors, mortise locks, panic bars, Detex devices, master key systems. 24/7 emergency service. (478) 223-7742">
@@ -14,23 +15,12 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
-    <!-- Emergency Header -->
-    <div class="emergency-bar">
-        <div class="container">
-            <span class="emergency-text">🚨 24/7 Emergency Commercial Locksmith Service</span>
-            <a href="tel:4782237742" class="emergency-phone">(478) 223-7742</a>
-        </div>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <span class="logo-icon">🔐</span>
-                <div class="logo-text">
-                    <h1>Macon Mobile</h1>
-                    <span>Commercial Locksmith</span>
-                </div>
+                <img src="assets/images/logo.webp" alt="Macon Mobile Commercial Locksmith" class="logo-img">
+
             </div>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -38,6 +28,7 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#areas" class="nav-link">Service Areas</a></li>
@@ -63,7 +54,7 @@
                         <span class="btn-icon">📞</span>
                         <span class="btn-text">Call (478) 223-7742</span>
                     </a>
-                    <a href="#services" class="btn btn-large btn-secondary">View Services</a>
+                    <a href="#services" class="btn btn-large btn-primary">View Services</a>
                 </div>
                 <div class="hero-trust">
                     <div class="trust-item">
@@ -576,9 +567,16 @@
             </div>
             <div class="areas-content">
                 <div class="areas-map">
-                    <div class="map-placeholder">
-                        <span class="map-icon">🗺️</span>
-                        <p>Macon, GA & Surrounding Areas</p>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.8484354175!2d-83.6324!3d32.8367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3e2a3b3b3b3b3%3A0x8b3b3b3b3b3b3b3b!2s551+Cherry+Street+%23102%2C+Macon%2C+GA+31201!5e0!3m2!1sen!2sus!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: var(--radius-xl);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
                 <div class="areas-list">
@@ -599,12 +597,11 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="section-header left">
+                    <div class="section-header center">
                         <span class="section-tag">Contact Us</span>
                         <h2 class="section-title">Get Professional Locksmith Service</h2>
                         <p class="section-description">Available 24/7 for emergency commercial lockouts and scheduled service appointments.</p>
@@ -625,13 +622,13 @@
                                 <p><a href="tel:4782237742">(478) 223-7742</a></p>
                             </div>
                         </div>
-                        <div class="contact-detail-item">
+                        <!-- <div class="contact-detail-item">
                             <span class="detail-icon">🌐</span>
                             <div>
                                 <strong>Website</strong>
                                 <p>maconmobilecommerciallocksmith.com</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="contact-detail-item">
                             <span class="detail-icon">⏰</span>
                             <div>
@@ -646,43 +643,6 @@
                         Call Now for Immediate Service
                     </a>
                 </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <h3>Request Service</h3>
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(478) 123-4567">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service...</option>
-                                <option value="emergency">Emergency Lockout</option>
-                                <option value="mortise">Mortise Cylinder Replacement</option>
-                                <option value="panic">Panic Bar Installation/Repair</option>
-                                <option value="detex">Detex Device Service</option>
-                                <option value="master">Master Key System</option>
-                                <option value="closer">Door Closer Adjustment</option>
-                                <option value="other">Other Commercial Service</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Describe your situation..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Request</button>
-                        <p class="form-note">For emergencies, please call directly for fastest response.</p>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -693,11 +653,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">🔐</span>
-                        <div class="logo-text">
-                            <h3>Macon Mobile</h3>
-                            <span>Commercial Locksmith</span>
-                        </div>
+                        <img src="assets/images/logo.webp" alt="Macon Mobile Commercial Locksmith" class="logo-img">
+
                     </div>
                     <p>Professional commercial locksmith services in Macon, GA. 20+ years of experience securing Middle Georgia businesses.</p>
                 </div>
@@ -727,7 +684,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Macon Mobile Commercial Locksmith. All rights reserved.</p>
+                <p>&copy; 2026 Macon Mobile Commercial Locksmith. All rights reserved.</p>
                 <p>Licensed & Insured Commercial Locksmith Services in Macon, GA</p>
             </div>
         </div>
