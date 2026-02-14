@@ -7,6 +7,9 @@
     <meta name="color-scheme" content="light">
     <meta name="description" content="Macon Mobile Commercial Locksmith - 20+ years experience. Commercial storefront doors, mortise locks, panic bars, Detex devices, master key systems. 24/7 emergency service. (478) 223-7742">
     <meta name="keywords" content="commercial locksmith Macon GA, storefront door repair, mortise lock, panic bar installation, Detex exit device, master key system, door closer, 24 hour locksmith">
+    <meta name="author" content="Macon Mobile Commercial Locksmith">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://maconmobilecommerciallocksmith.com">
     <title>Macon Mobile Commercial Locksmith | 20+ Years Experience | (478) 223-7742</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
     <link rel="stylesheet" href="style.css">
@@ -14,48 +17,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Critical CSS for faster rendering -->
+    <style>
+        .critical-above-fold { display: block; }
+        .hero { content-visibility: visible; }
+        .navbar { content-visibility: visible; }
+        .nav-container { content-visibility: visible; }
+    </style>
+    <link rel="preload" href="assets/images/logo.webp" as="image">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" as="style">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
             <div class="logo">
                 <img src="assets/images/logo.webp" alt="Macon Mobile Commercial Locksmith" class="logo-img">
 
             </div>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#areas" class="nav-link">Service Areas</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="tel:4782237742" class="btn btn-primary nav-cta">Call Now</a></li>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                <li><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li><a href="#areas" class="nav-link" role="menuitem">Service Areas</a></li>
+                <li><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li><a href="tel:4782237742" class="btn btn-primary nav-cta" aria-label="Call (478) 223-7742" role="menuitem">Call Now</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" role="region" aria-label="Hero section">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">⚡ Fast 20-25 Min Response</div>
+                <div class="hero-badge"> Fast 20-25 Min Response</div>
                 <h2 class="hero-title">Macon Mobile <span>Commercial Locksmith</span></h2>
                 <p class="hero-subtitle">20+ Years Experience | Storefront Doors | Mortise Locks | Panic Bars | Detex Devices</p>
                 <p class="hero-description">
                     Professional commercial locksmith services for retail stores, offices, warehouses, and businesses throughout Macon, Georgia. We specialize in storefront door repair, mortise cylinder replacement, panic bar installation, and emergency lockout service.
                 </p>
                 <div class="hero-cta-group">
-                    <a href="tel:4782237742" class="btn btn-large btn-primary">
+                    <a href="tel:4782237742" class="btn btn-large btn-primary" aria-label="Call (478) 223-7742" role="button">
                         <span class="btn-icon">📞</span>
                         <span class="btn-text">Call (478) 223-7742</span>
                     </a>
-                    <a href="#services" class="btn btn-large btn-primary">View Services</a>
+                    <a href="#services" class="btn btn-large btn-primary" aria-label="View our commercial locksmith services" role="button">View Services</a>
                 </div>
                 <div class="hero-trust">
                     <div class="trust-item">
